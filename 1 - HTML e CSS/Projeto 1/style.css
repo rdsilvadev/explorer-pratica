@@ -66,10 +66,6 @@ a, a:hover, a:active, a:visited, a:link {
     margin: 0 auto 8px;
 }
 
-#footer {
-    margin-bottom: 33px;
-}
-
 #footer a + a {
     margin-left: 28px;
 }
