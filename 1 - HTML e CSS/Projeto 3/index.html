@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relembrando</title>
+</head>
+<body>
+    <form action="registro.php" method="get">
+        <label for="titulo">Título do evento</label>
+        <input type="text" name="titulo" id="titulo" required maxlength="120" autocomplete="off" placeholder="seu evento">
+        <p>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="30" autocomplete="current-password"
+            placeholder="sua senha">
+        </p>
+        <p>
+            <label for="check">Check</label>
+            <input type="checkbox" name="check" id="check">
+        </p>
+        <p>
+            <select name="" id="">
+                <option value="vazio">------</option>
+                <option value="music">Música</option>
+                <option value="movie">Filme</option>
+            </select>
+        </p>
+        <p>
+            <textarea name="texto" id="texto"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
