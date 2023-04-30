@@ -84,7 +84,7 @@ fieldset legend {
     font-size: 24px;
     line-height: 34px;
 
-    border-bottom: 1px solid #E6E6F0;
+    border-bottom: 1px solid #0707d8;
     width: 100%;
 
     padding: 16px;
@@ -152,7 +152,7 @@ fieldset legend {
     background-position: right 24px top 50%;
 }
 
-.checkbox-wrapper {
+.checkbox-wrapper { /* IMPORTANTE */
     position: relative;
 }
 
@@ -249,3 +249,58 @@ footer input:hover {
     /* /\ 50% para ficar no meio e os pixels de distância desse ponto de referência */
     background-size: 30px;
 }
+
+.input-wrapper2 {  
+    display: flex;
+    flex-direction: column;  
+}
+
+.input-wrapper2 label {
+    margin: 5px 0 5px 0;
+}
+
+.input-wrapper2 input {
+    padding: 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #d1d1d1;
+}
+
+.input-wrapper2 input:focus {
+    background-color: #e6f0f3;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+    ;
+    gap: 10px;
+}
+
+.input-wrapper2:nth-child(1) {
+    width: 550px;
+}
+
+.input-wrapper2:nth-child(2) {
+    width: 50px;
+}
+
+.input-wrapper2:nth-child(3) {
+    width: 50px;
+}
+
+/* Ordem boa para wrappers: 
+
+    >fieldset>
+        legend
+            <div class="fieldset-wrapper"> (ou qualquer outro pra resolver questões de posição)
+                <div class="input-wrapper">
+                    <label>
+                    <input>
+                </div>
+            </div>
+    </fieldset>
+
+*/
