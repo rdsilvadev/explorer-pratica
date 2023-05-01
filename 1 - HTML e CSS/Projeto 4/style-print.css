@@ -1,0 +1,8 @@
+@media print {
+    body, html {
+        -webkit-print-color-adjust: exact !important;
+        background: rgb(219, 26, 26);
+        print-color-adjust: exact;
+    }
+}
+    
