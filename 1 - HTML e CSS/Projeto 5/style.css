@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-1: 'Epilogue', sans-serif;
+    --fonte-2: Arial, Helvetica, sans-serif;
+
+    --hue: 222;
+    --bg-primary: hsl(var(--hue), 22%, 20%);
+    --fc-primary: hsl(var(--hue), 0%, 100%);
+    --fc-secondary: #hsl(var(hue), 50%, 80%);
+
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fs-heading: 4rem;
+}
+
+/* font-family: 'Epilogue', sans-serif; */
+body { 
+    font-family: var(--fonte-1);
+    background-color: var(--bg-primary);
+    color: var(--fc-primary);
+}
+
+main {
+    display: grid;
+    gap: 3.2rem;
+}
+
+.page {
+    max-width: 33rem;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+img {
+    width: 100%; /* 100% dentro da .page, que é seu pai */
+    height: auto; /* Não é necessário */
+    
+}
+
+.card {
+    position: relative; /* essencial pra posicionar com sobreposição */ 
+    /* Se os 2 elementos fossem separados, position também resolveria */
+}
+
+.card img {
+    height: 41.6rem;
+    border-radius: 1rem;
+    object-fit: cover; /* Importante pra ajustar caixa ao conteúdo */
+
+    /* transition-property: transform;
+    transition-duration: 200ms;
+    transition-delay: 1s; 
+    transition-time-function: ease */
+
+    /* o controle perfeito de animação acontece na forma basal */
+
+    transition: all .5s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    opacity: .3; /* lindo */
+}
+
+.card h2 {
+    position: absolute; /* essencial pra posicionar com sobreposição */
+    left: 5.2rem;
+    bottom: 2.8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    font-size: var(--fs-heading);
+
+    /* display: grid;
+    gap: 1.5rem; */
+}
+
+.card span {
+    background-color: white;
+    color: black;
+    border-radius: 1.6rem;
+    padding: 1rem;
+    font-size: var(--fs-body);
+    width: fit-content;
+}
+
+header {
+    margin: 10rem 0 8rem;
+    font-family: var(--fonte-2);
+    text-align: center;
+}
+
+header p {
+    color: var(--fc-secondary);
+    text-transform: uppercase;
+
+    line-height: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 1.7rem;
+}
+
+header h1 {
+    font-size: var(--fs-heading);
+    line-height: 4.8rem;
+    font-weight: 800;
+}
+
+header {
+    animation-name: topdown;
+    animation-duration: 1s;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
