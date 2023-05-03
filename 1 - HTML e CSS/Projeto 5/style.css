@@ -17,7 +17,8 @@
 
     font-size: 62.5%;
     --fs-body: 1.6rem;
-    --fs-heading: 4rem;
+    --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+    --fs-heading-sm: clamp(3rem, 1rem + 3vw, 4rem);
 }
 
 /* font-family: 'Epilogue', sans-serif; */
@@ -33,7 +34,7 @@ main {
 }
 
 .page {
-    max-width: 33rem;
+    max-width: clamp(33rem, 20rem + 45vw, 117rem);
     margin: 0 auto;
     padding: 10px;
 }
@@ -62,23 +63,26 @@ img {
     /* o controle perfeito de animação acontece na forma basal */
 
     transition: all .5s;
+
+    filter: brightness(0.5);
 }
 
 .card img:hover {
     transform: scale(1.1);
-    opacity: .3; /* lindo */
+    opacity: 1; /* lindo */
+    filter: brightness(1);
 }
 
 .card h2 {
     position: absolute; /* essencial pra posicionar com sobreposição */
-    left: 5.2rem;
+    left: 2.5rem;
     bottom: 2.8rem;
 
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 
-    font-size: var(--fs-heading);
+    font-size: var(--fs-heading-sm);
 
     /* display: grid;
     gap: 1.5rem; */
@@ -118,6 +122,17 @@ header h1 {
 header {
     animation-name: topdown;
     animation-duration: 1s;
+    /* animation-fill-mode: forwards; acabar em 100%
+    animation-direction: normal; do 100 ao 0%
+    animation-delay: 200ms; tempo pra iniciar
+    animation-timing-function: ease; controla a aceleração
+    animation-iteration-count: infinite; autoexplicativo
+    animation-play-state: paused; */
+}
+
+main {
+    /* animation: downtop .7s .2s reverse backwards; */ 
+    animation: downtop .7s .4s backwards;
 }
 
 @keyframes topdown {
@@ -125,9 +140,29 @@ header {
         opacity: 0;
         transform: translateY(-35px);
     }
+/* 
+    50% {
+
+    } */
 
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* header:hover {
+    animation-play-state: running;
+} */
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateX(15px) translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
     }
 }

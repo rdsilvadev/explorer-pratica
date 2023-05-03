@@ -1,0 +1,51 @@
+/* :root {
+    --fonte-1: 'Epilogue', sans-serif;
+    --fonte-2: Arial, Helvetica, sans-serif;
+
+    --hue: 222;
+    --bg-primary: hsl(var(--hue), 22%, 20%);
+    --fc-primary: hsl(var(--hue), 0%, 100%);
+    --fc-secondary: #hsl(var(hue), 50%, 80%);
+
+    font-size: 62.5%;
+    --fs-body: 1.6rem;
+    --fs-heading: 4rem;
+} */
+
+@media (min-width: 500px) {
+    /* .page {
+        max-width: 80rem;
+        padding: 0 5rem;
+    } */
+}
+
+@media (min-width: 900px) {
+
+    /* .page {
+        max-width: 117rem;
+        padding: 0 5rem;
+    } */
+
+    main {
+        display: grid;
+
+        grid-template-areas: "A B B"
+          "C C D";
+    }
+
+    main div:nth-child(1) {
+        grid-area: A;
+    }
+
+    main div:nth-child(2) {
+        grid-area: B;
+    }
+
+    main div:nth-child(3) {
+        grid-area: C;
+    }
+
+    main div:nth-child(4) {
+        grid-area: D;
+    }
+}
