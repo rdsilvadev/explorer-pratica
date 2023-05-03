@@ -1,0 +1,71 @@
+:root {
+    font-size: 62.50%;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: grid;
+    
+    grid-template-areas: "A A A A"
+                         "B B B B"
+                         "C C C C";
+}
+
+div.area1 {
+    background-color: rgb(196, 226, 28);
+    height: 5rem;
+    display: flex;
+
+    /* grid-area: A; */
+}
+
+div.area2 {
+    background-color: rgb(180, 17, 17);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    /* grid-area: B; */
+}
+
+img {
+    width: 10rem;
+    padding: 1rem;
+}
+
+ol {
+    list-style-type: none;
+    color: rgb(46, 43, 43);
+    font-size: 2.4rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+ol li {
+    background-color: rgb(255, 217, 0);
+    padding: .5rem;
+    border-radius: .3rem;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.548);
+}
+
+article {
+    background-color: red;
+    grid-area: A;
+}
+
+main {
+    background-color: blue;
+    grid-area: B;
+}
+
