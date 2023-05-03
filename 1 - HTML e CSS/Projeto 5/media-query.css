@@ -19,16 +19,16 @@
     } */
 }
 
-@media (min-width: 900px) {
+@media (min-width: 730px) {
 
-    /* .page {
-        max-width: 117rem;
+    .page {
+        /* max-width: 117rem; */
         padding: 0 5rem;
-    } */
+    }
 
     main {
         display: grid;
-
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "A B B"
           "C C D";
     }
