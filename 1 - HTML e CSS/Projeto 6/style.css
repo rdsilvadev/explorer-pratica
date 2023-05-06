@@ -2,70 +2,264 @@
     font-size: 62.50%;
 }
 
-html {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #F3F3F3;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
     display: grid;
+
+    margin-top: 4rem;
     
-    grid-template-areas: "A A A A"
+    grid-template-areas: "A D D E"
                          "B B B B"
                          "C C C C";
 }
 
 div.area1 {
-    background-color: rgb(196, 226, 28);
-    height: 5rem;
     display: flex;
 
-    /* grid-area: A; */
+    justify-content: space-between;
+    align-items: center;
 }
+
+div.area1 div.links {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.links ol {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+div.links ol li {
+    font-weight: bold;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+}
+
+div.links ol li a {
+    text-decoration: none;
+    padding: 0 .7rem;
+    display: inline-flex;
+}
+
+div.links ol li div.separator {
+    display: inline-block;
+    height: 1rem;
+    width: 1px;
+    top: 5px;
+    position: relative;
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+div.links ol li:first-child {
+    border-top: 2px solid #ffffff;
+}
+
+div.links ol li a.show {
+    color: #035ce0;
+}
+
+div.links ol li a.show:hover {
+    color: #478ffa;
+}
+
+div.links ol li:nth-child(2) {
+    border-top: 2px solid #ffffff;
+}
+
+div.links ol li:nth-child(2) a {
+    color: #c51212;
+}
+
+div.links ol li:nth-child(2):hover{
+    border-top-color: #c51212;
+}
+
+div.links ol li:nth-child(3) {
+    border-top: 2px solid #ffffff;
+}
+
+div.links ol li:nth-child(3) a {
+    color: #04a504;
+}
+
+div.links ol li:nth-child(3):hover {
+    border-top-color: #04a504;
+}
+
+div.links ol li:nth-child(4) {
+    border-top: 2px solid #ffffff;
+}
+
+div.links ol li:nth-child(4) a {
+    color: #f85d24;
+}
+
+div.links ol li:nth-child(4):hover {
+    border-top-color: #f85d24;
+}
+
+div.links ol li:nth-child(5) {
+    border-top: 2px solid #ffffff;
+}
+
+div.links ol li:nth-child(5) a {
+    color: #ff0000;
+}
+
+div.links ol li:nth-child(5):hover {
+    border-top-color: #ff0000;
+}
+
+div.links ol li:nth-child(6) {
+    border-top: 2px solid #ffffff;
+}
+
+div.links ol li a.no-show {
+    color: #1d3eaa;
+}
+
+div.links ol li:nth-child(6):hover {
+    border-top-color: #1d3eaa;
+}
+
+
+
+div.area1 div.user {
+    padding-right: 1rem;
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+div.area1 div.user a {
+    text-decoration: none;
+}
+
+
+div.area1 div.user > a, div.area1 div.user div {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+div.area1 div.user div > a {
+    color: #616161;
+}
+
+div.area1 div.user div {
+    display: flex;
+    align-items: center;
+}
+
+div.area1 div.user a {
+    font-size: 1.2rem;
+    color: #919191;
+}
+
+div.area1 div.user div > a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+/* "element + element" ou "element ~ element" são técnicas importante para acessar item B através do item A anterior */
+
+div.area1 div.user a:hover {
+    color: #035ce0;
+}
+
+div.area1 div.user div img {
+    width: 24px;
+    margin-right: .9rem;
+}
+
+div.area1 div.user span#setinha {
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-left: .5rem;
+}
+
+/* div.area2:hover:has(span) { Bom exemplo de como o has funciona
+    background-color: green;
+} */
 
 div.area2 {
-    background-color: rgb(180, 17, 17);
-    display: flex;
+    background-color: #C4170C;
+    color: white;
+    display: grid;
+
     justify-content: space-between;
-    padding: 1rem;
-
-    /* grid-area: B; */
+    align-items: center;
+    height: 7.5rem;
+    padding: 0 1.5rem 0 1rem;
 }
 
-img {
-    width: 10rem;
-    padding: 1rem;
-}
-
-ol {
-    list-style-type: none;
-    color: rgb(46, 43, 43);
-    font-size: 2.4rem;
-
+div.area2 > div.bloco-menu {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 7rem;
 }
 
-ol li {
-    background-color: rgb(255, 217, 0);
-    padding: .5rem;
-    border-radius: .3rem;
-    box-shadow: 1px 2px rgba(0, 0, 0, 0.548);
+div.area2 > div.bloco-menu > span#label-menu {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.area2 > div.bloco-menu > span#menu {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* A solução não seria flex de jeito nenhum */
+
+
+div.area2 > div#logo {
+    cursor: pointer;
+}
+
+div.area2 div.bloco-busca {
+    background-color: #04a504;
+}
+
+div.area2 div.bloco-busca > input {
+    background-image: url('search.svg');
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-color: #a70e03;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
 }
 
 article {
     background-color: red;
-    grid-area: A;
+    grid-area: B;
 }
 
 main {
     background-color: blue;
-    grid-area: B;
+    grid-area: C;
 }
 
