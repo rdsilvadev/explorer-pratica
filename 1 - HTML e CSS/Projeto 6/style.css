@@ -226,20 +226,25 @@ div.area2 div.bloco-menu {
     font-size: 1.4rem;
     gap: 4px;
     font-weight: 600;
-    cursor: pointer;
-    height: 7rem;
     flex: 1;
     /* flex-shrink: 1;
     flex-basis: 0;
     flex-grow: 1; */
 }
 
-div.area2 div.bloco-menu > span#label-menu {
+div.area2 div.bloco-menu > .wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 7rem;
+}
+
+div.area2 div.bloco-menu > .wrapper span#label-menu {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.area2 div.bloco-menu > span#menu {
+div.area2 div.bloco-menu > .wrapper span#menu {
     font-size: 3rem;
     font-weight: 300;
 }
@@ -248,13 +253,16 @@ div.area2 div.bloco-menu > span#menu {
 
 
 div.area2 div#logo {
-    cursor: pointer;
     display: flex;
     justify-content: center;
     flex: 1;
     /* flex-shrink: 1;
     flex-basis: 0;
     flex-grow: 1; */
+}
+
+div.area2 div#logo img {
+    cursor: pointer;
 }
 
 div.area2 div.bloco-busca {
