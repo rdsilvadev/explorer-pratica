@@ -1,0 +1,44 @@
+@media (max-width: 650px) {
+    div.area1 {
+        display: none;
+    }
+
+    div.area2 {
+        height: 5rem;
+    }
+
+    div.area2 div.bloco-menu > .wrapper {
+        height: 5rem;
+    }
+
+    div.area2 div.bloco-menu > .wrapper span#menu {
+        font-size: 2.8rem;
+    }
+
+    div.area2 div.bloco-menu > .wrapper #label-menu {
+        display: none;
+    }
+
+    div.area2 div#logo img {
+        width: 5.1rem;
+    }
+
+    div.area2 div.bloco-busca {
+        padding-bottom: 0;
+    }
+
+    div.area2 div.bloco-busca > label {
+        padding: 0;
+        background-color: #C4170C;
+    }
+
+    div.area2 div.bloco-busca > label span {
+        font-size: 2.5rem;
+        padding-top: 0;
+    }
+
+    div.area2 div.bloco-busca > input {
+        display: none;
+    }
+
+    }
