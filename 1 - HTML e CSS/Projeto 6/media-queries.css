@@ -41,4 +41,50 @@
         display: none;
     }
 
+    article {
+        background-color: white;
+    }
+
+    article h1:first-child {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: rgb(49, 49, 49);
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    article h1:nth-child(2) {
+        font-family: sans-serif;
+        font-weight: 700;
+        padding: 0 2rem;
+        font-size: 1.5rem;
+        color: #C4170C;
+    }
+
+    article picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        /* height: ; */
+    }
+
+    article picture img {
+        width: 95%;
+        padding: 2rem 0;
+    }
+
+    article picture p { /* Teste de sobreposição */
+        position: absolute;
+        left: 2rem;
+        bottom: 3rem;
+        color: white;
+        font-size: 2rem;
+        background: rgba(255, 0, 0, 0.452);
+        border-radius: .5rem;
+        width: fit-content;
+        padding: 0 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
     }

@@ -14,6 +14,10 @@
     height: 100vh;
 } */
 
+#favicon {
+    border-radius: 5px;
+}
+
 body {
     background-color: #F3F3F3;
     font-family: 'Courier New', Courier, monospace;
@@ -332,12 +336,10 @@ div.area2 div.bloco-busca > input:active, div.area2 div.bloco-busca > input:focu
 }
 
 article {
-    background-color: red;
     grid-area: B;
 }
 
 main {
-    background-color: blue;
     grid-area: C;
 }
 
