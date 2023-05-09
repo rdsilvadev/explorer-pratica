@@ -26,7 +26,7 @@ body {
 .container {
     display: grid;
 
-    margin-top: 4rem;
+    /* margin-top: 1.6rem; */
     
     grid-template-areas: "A A A A"
                          "B B B B"
@@ -214,7 +214,7 @@ div.area2 {
     height: 7.9rem;
     padding: 0 1.2rem 0 .8rem;
 
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
 }
 
@@ -335,11 +335,13 @@ div.area2 div.bloco-busca > input:active, div.area2 div.bloco-busca > input:focu
     outline: none;
 }
 
-article {
-    grid-area: B;
-}
-
-main {
+/* main {
     grid-area: C;
+} */
+
+section {
+    background-color: white;
+    box-shadow: 1px 1px 2px #0000001c;
+    margin: 1.6rem 0 0;
 }
 
