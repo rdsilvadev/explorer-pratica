@@ -60,7 +60,7 @@
         padding: 0 2.5rem;
         font-size: 2rem;
         line-height: 2.2rem;
-        width: 98vw;
+        width: 97vw;
         letter-spacing: -1px;
     }
 
@@ -88,7 +88,7 @@
 
     section.video-content {
         /* background-color: #C4170C; */
-        margin: 2.3rem 0 0.7rem;
+        margin: 1.6rem 0 0;
     }
     
     section.video-content div.video-1 {
@@ -188,10 +188,11 @@
     }
 
     section.video-content div.bar {
-        width: 80vw;
+        width: 83vw;
         background-color: #0000002c;
         height: 1px;
-        margin: 0 2.7rem;
+        margin: auto;
+        
     }
 
     section > div.resumo {
