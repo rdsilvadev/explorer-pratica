@@ -21,6 +21,7 @@
 body {
     background-color: #F3F3F3;
     font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
 }
 
 .container {

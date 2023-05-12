@@ -187,12 +187,32 @@
         letter-spacing: -1px;
     }
 
-    section.video-content div.bar {
+
+    section div.bar {
         width: 83vw;
-        background-color: #0000002c;
+        background-color: #6161612c;
         height: 1px;
         margin: auto;
         
+    }
+
+    section.normal-content a.extra-normal {
+        font-size: 1.8rem;
+        text-decoration: none;
+        font-family: 'Open Sans';
+        color: #C4170C;
+        font-weight: bold;
+        margin: 2.2rem 2.7rem;
+        display: block;
+        letter-spacing: -1px;
+        line-height: 2rem;
+    }
+
+    section.normal-content div.bar-normal {
+        background-color: #2c2c2c1c;
+        height: 1px;
+        width: 83vw;
+        margin: auto;
     }
 
     section > div.resumo {
@@ -224,6 +244,93 @@
         color: #4e4e4e;
     }
 
+    div.viu-isso {
+        background-color: white;
+        margin: 1.6rem 0;
+        width: 100%;
+        border-radius: 12px;
+    }
 
+    div.viu-isso h1, div.mais-lidas h1 {
+        color: #181818;
+        font-size: 1.7rem;
+        font-weight: 700;
+        font-family: sans-serif;
+        margin: 1.7rem 2.3rem;
+    }
+
+    div.viu-isso div.row-news {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0 2.5rem;
+        overflow: auto;
+    }
+
+    div.viu-isso div.row-news div.row-news-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 2.5rem 0;
+    }
+
+    div.viu-isso div.row-news div.row-news-wrapper a {
+        text-decoration: none;
+        color: #C4170C;
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+    }
+
+    div div.full-bar {
+        background-color: #2c2c2c1c;
+        height: 1px;
+        width: 100%;
+        margin: auto;
+    }
+
+    div div.semi-bar {
+        background-color: #2c2c2c1c;
+        height: 1px;
+        width: 85vw;
+        margin: auto;
+    }
+
+    div.mais-lidas {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 12px;
+    }
+
+    div.mais-lidas div.list-wrapper {
+        margin: 2.1rem 0;
+        padding: 0 2rem 0 .5rem;
+    }
+
+    div.mais-lidas div.list-wrapper a {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    div.mais-lidas a {
+        text-decoration: none;
+        color: #C4170C;
+        font-size: 1.7rem;
+        letter-spacing: -1px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    div.mais-lidas span {
+        font-size: 2.1rem;
+        font-family: 'Open Sans';
+        color: #00000067;
+        font-weight: 500;
+        padding: 0 1.6rem;
+    }
 
 }
