@@ -297,7 +297,7 @@
         margin: auto;
     }
 
-    div.mais-lidas, div.deu-falar, div.favoritos {
+    div.mais-lidas, div.deu-falar, div.favoritos, div.ouca-g1 {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -376,9 +376,9 @@
         font-size: 2rem;
     }
 
-    /* div.favoritos {
-        
-    } */
+    div.favoritos {
+        margin-bottom: 1.6rem;
+    }
 
     div.favoritos div.favoritos-head {
         display: flex;
@@ -403,9 +403,10 @@
     }
 
     div.favoritos h2 {
-        padding: 1.6rem 2.3rem 2.3rem;
+        padding: 1.6rem 2.3rem 1.4rem;
         font-family: 'Open Sans';
         letter-spacing: -.5px;
+        font-weight: normal;
     }
 
     div.favoritos div.favoritos-opt {
@@ -415,17 +416,73 @@
     }
 
     div.favoritos div.favoritos-opt a {
+        display: inline-block;
         font-family: 'Open Sans';
         letter-spacing: -.5px;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #C4170C;
+        padding: .8rem 1.7rem;
+        margin: .5rem .3rem;
+        border: 1px solid rgba(0, 0, 0, 0.212);
+        border-radius: 2rem;
+        width: fit-content;
+        gap: 1rem;
     }
 
     div.favoritos div.favoritos-seguir {
         padding: 1.6rem 2.3rem;
+        text-align: center;
+        width: 82vw;
+        margin: auto auto 2.3rem auto;
+        background-color: #f1f0ec;
     }
 
     div.favoritos div.favoritos-seguir a {
         font-family: 'Open Sans';
         letter-spacing: -.5px;
+        color: #ada5a5;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    div.ouca-g1 h1 {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+        font-size: 1.6rem;
+        padding: 1.6rem 2.3rem 1.4rem;
+    }
+
+    div.ouca-g1 div.ouca-wrapper {
+        padding: 2.3rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper h2 {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper a {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #C4170C;
+        font-weight: 700;
+    }
+
+    div.ouca-g1 div.ouca-wrapper img {
+        border-radius: 12px;
     }
 
 }
