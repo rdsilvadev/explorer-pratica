@@ -244,14 +244,14 @@
         color: #4e4e4e;
     }
 
-    div.viu-isso {
+    div.viu-isso, div.deu-falar {
         background-color: white;
         margin: 1.6rem 0;
         width: 100%;
         border-radius: 12px;
     }
 
-    div.viu-isso h1, div.mais-lidas h1 {
+    div.viu-isso h1, div.mais-lidas h1, div.deu-falar h1 {
         color: #181818;
         font-size: 1.7rem;
         font-weight: 700;
@@ -267,7 +267,7 @@
         overflow: auto;
     }
 
-    div.viu-isso div.row-news div.row-news-wrapper {
+    div.viu-isso div.row-news div.row-news-wrapper, div.deu-falar div.deu-wrapper {
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -297,7 +297,7 @@
         margin: auto;
     }
 
-    div.mais-lidas {
+    div.mais-lidas, div.deu-falar {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -331,6 +331,49 @@
         color: #00000067;
         font-weight: 500;
         padding: 0 1.6rem;
+    }
+
+    div.deu-falar div.deu-wrapper a {
+        text-decoration: none;
+        color: #C4170C;
+        font-size: 1.6rem;
+        letter-spacing: -1px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    div.deu-falar div.deu-wrapper img {
+        border-radius: 12px;
+    }
+
+    div.deu-falar div.deu-wrapper {
+        margin: 2.2rem;
+    }
+
+    div.deu-falar div.deu-link {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 2rem;
+    }
+
+    div.deu-falar div.deu-link a {
+        text-decoration: none;
+        color: #C4170C;
+        font-size: 1.4rem;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        letter-spacing: -1px;
+        display: flex;
+        text-align: center;
+        gap: .7rem;
+    }
+
+    div.deu-falar div.deu-link a img {
+        color: #C4170C;
+        width: 20px;
     }
 
 }
