@@ -297,7 +297,7 @@
         margin: auto;
     }
 
-    div.mais-lidas, div.deu-falar {
+    div.mais-lidas, div.deu-falar, div.favoritos {
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -341,8 +341,8 @@
         font-family: 'Open Sans';
         font-weight: 700;
         display: flex;
-        gap: 10px;
-        align-items: center;
+        gap: 20px;
+        align-items: flex-start;
     }
 
     div.deu-falar div.deu-wrapper img {
@@ -371,9 +371,61 @@
         gap: .7rem;
     }
 
-    div.deu-falar div.deu-link a img {
+    div.deu-falar div.deu-link a span {
         color: #C4170C;
-        width: 20px;
+        font-size: 2rem;
+    }
+
+    /* div.favoritos {
+        
+    } */
+
+    div.favoritos div.favoritos-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.6rem 2.3rem;
+    }
+
+    div.favoritos div.favoritos-head h1 {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+        font-size: 1.6rem;
+    }
+
+    div.favoritos div.favoritos-head a {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #C4170C;
+        font-weight: 600;
+    }
+
+    div.favoritos h2 {
+        padding: 1.6rem 2.3rem 2.3rem;
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+    }
+
+    div.favoritos div.favoritos-opt {
+        padding: 1.6rem 2.3rem;
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+    }
+
+    div.favoritos div.favoritos-opt a {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
+    }
+
+    div.favoritos div.favoritos-seguir {
+        padding: 1.6rem 2.3rem;
+    }
+
+    div.favoritos div.favoritos-seguir a {
+        font-family: 'Open Sans';
+        letter-spacing: -.5px;
     }
 
 }
