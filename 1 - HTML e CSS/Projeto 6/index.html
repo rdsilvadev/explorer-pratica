@@ -286,18 +286,18 @@
         </div>
         <div class="full-bar"></div>
         <h2>Escolha quais assuntos você quer ver e clique no botão para abrir as últimas notícias.</h2>
-        <div class="favoritos-opt">
-            <a href="#">fato ou fake</a>
-            <a href="#">podcast</a>
-            <a href="#">política</a>
-            <a href="#">economia</a>
-            <a href="#">tecnologia</a>
-            <a href="#">saúde</a>
-            <a href="#">música</a>
-            <a href="#">concuros</a>
-            <a href="#">cinema</a>
+        <div class="favoritos-opt" onclick="favClick()">
+            <a class="opt-fav">fato ou fake</a>
+            <a class="opt-fav">podcast</a>
+            <a class="opt-fav">política</a>
+            <a class="opt-fav">economia</a>
+            <a class="opt-fav">tecnologia</a>
+            <a class="opt-fav">saúde</a>
+            <a class="opt-fav">música</a>
+            <a class="opt-fav">concursos</a>
+            <a class="opt-fav">cinema</a>
         </div>
-        <div class="favoritos-seguir">
+        <div id="favoritos-seguir">
             <a>Seguir Assuntos</a>
         </div>
     </div>
@@ -326,7 +326,9 @@
         </div>
         <div class="full-bar"></div>
         <div class="ouca-mais">
-            <a href="https://g1.globo.com/podcast/">Tudo sobre podcasts</a>
+            <a href="https://g1.globo.com/podcast/">Tudo sobre podcasts<span class="material-symbols-outlined">
+                arrow_forward
+                </span></a>
         </div>
     </div>
 
@@ -378,6 +380,15 @@
         //     if (clip.currentTime > 7) {clip.load();
         //     }
         // })
+
+        function favClick() {
+            var elements = document.getElementsByClassName('opt-fav');
+            for(var i = 0; i < elements.length; i++){
+                Object.assign(elements[i].style, { backgroundColor: '#C4170C', color: 'white', border: '1px solid white'});
+        // document.getElementsById('favoritos-seguir').style.backgroundColor = '#C4170C';
+        }
+        
+    }
 
     </script>
 
