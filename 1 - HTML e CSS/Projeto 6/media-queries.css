@@ -431,6 +431,42 @@
         cursor: pointer;
     }
 
+    /* div:has(> a.opt-fav:empty) {  USANDO HAS E EMPTY
+        background-color: rgb(34, 96, 178);
+    }
+
+    has com media na criação de flexbox
+
+    .exemplo:has(.media) {
+        display: flexbox;
+        justify-content: space-between;
+    }
+    
+    */
+
+    /* .favoritos:hover :is(.favoritos-opt a, .exemplo-x, .exemplo-y) {
+        color: blue;
+        background-color: yellow;
+    } 
+    
+    É uma solução bem melhor do que 
+
+    .favoritos:hover .favoritos-opt a, .favoritos:hover .exemplo-x, .exemplo-y {
+        color: blue;
+        background-color: yellow; 
+    }
+
+    e soluciona o problema de colocar itens dentro de divs ou links para ter a mesma mudançda de atributo
+
+    .favoritos .favoritos-opt a:first-child:hover ~ a {
+        background-color: yellow;
+    }
+
+    
+    */
+
+    
+
     div.favoritos div#favoritos-seguir {
         padding: 1.6rem 2.3rem;
         text-align: center;
@@ -458,6 +494,7 @@
         padding: 2.3rem;
         display: flex;
         gap: 1rem;
+        justify-content: space-between;
     }
 
     div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper {
