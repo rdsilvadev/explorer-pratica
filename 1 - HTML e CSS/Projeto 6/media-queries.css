@@ -55,30 +55,47 @@
     }
 
     div.container {
-        padding: 7rem;
+        padding: 4rem 6rem;
         box-sizing: border-box;
     }
     
     div.sec-test {
         display: grid;
         width: 100%;
-        gap: 2rem;
+        gap: 1.3rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
 
         /* grid-auto-flow: column; */
-        /* background-color: aqua; */
+        background-color: aqua;
     }
 
     section {
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         margin: 0;
+        padding: 0;
         height: auto;
         width: auto;
     }
 
+    section h1 {
+    }
+
+    section picture {
+        padding: 0;
+    }
+
+    section picture img {
+        display: block; 
+        border-radius: 1.5rem;
+    }
+
     section h1, section h2, section p {
         width: auto;
+    }
+
+    section .semi-bar, section .full-bar {
+        display: none;
     }
 
     section > div.resumo {
@@ -94,9 +111,18 @@
         grid-row: 1 / 3;
     }
 
+    section#sec1 picture {
+        display: none;
+        object-fit: fill;
+    }
+
     section#sec2 {
         grid-column: 3 / 5;
         grid-row: 1 / 2;
+    }
+
+    section#sec2 .resumo {
+        display: none;
     }
 
     section#sec3 {
@@ -104,11 +130,19 @@
         grid-row: 2 / 3;
     }
 
+    :is(section) :is(h1, h2) {
+        display: none;
+    }
+
     div.mais-lidas {
     }
 
     section.video-content {
         display: none;
+    }
+
+    :is(section#sec2, section#sec3) :is(img) {
+        filter: opacity(.8/);
     }
 
 } 
