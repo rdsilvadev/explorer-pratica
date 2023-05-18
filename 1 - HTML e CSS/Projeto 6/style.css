@@ -14,6 +14,8 @@
     height: 100vh;
 } */
 
+
+
 #favicon {
     border-radius: 5px;
 }
@@ -22,16 +24,6 @@ body {
     background-color: #F3F3F3;
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
-}
-
-.container {
-    display: grid;
-
-    /* margin-top: 1.6rem; */
-    
-    grid-template-areas: "A A A A"
-                         "B B B B"
-                         "C C C C";
 }
 
 div.area1 {
@@ -346,3 +338,507 @@ section {
     margin: 1.6rem 0 0;
 }
 
+section h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    padding: 2.2rem 2.5rem .6rem;
+    font-size: 1.7rem;
+}
+
+section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 0 2.5rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    width: 97vw; /* problemático quando aumenta a página, é preciso colocar automático */
+    letter-spacing: -1px;
+}
+
+section h2 a {
+    text-decoration: none;
+    color: #C4170C;
+}
+
+section picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 2.3rem 0 1.4rem;
+}
+
+/* section picture> a {
+    background-color: #C4170C;
+} */
+
+section picture img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+section.video-content {
+    /* background-color: #C4170C; */
+    margin: 1.6rem 0 0;
+}
+
+section.video-content div.video-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 2.5rem 0 .9rem;
+    /* background-color: #C4170C; */
+    
+}
+
+/* section.video-content div.video-1 a {
+    background-color: #37c40c;
+} */
+
+section.video-content div.video-1 {
+    object-fit: initial
+}
+
+section.video-content div.video-1 video {
+    border-radius: 11px 11px 11px 11px;
+    width: 100%;
+    height: 100%;
+}
+
+section.video-content div.video-1 div.logo-svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+section.video-content div.video-1 div.em-alta {
+    font-family: 'Open Sans', sans-serif;
+    padding: .5rem .8rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #C4170C;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: circle 2s linear infinite;
+}
+
+@keyframes circle {
+    50% {
+        opacity: .3;
+    }
+}
+
+section.video-content div.video-1 div.circle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+section.video-content div.video-1 div.circle-wrapper span#seta {
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 3.5rem;
+    color: #C4170C;
+}
+
+section.video-content div.video-1 div.circle-wrapper span:nth-child(2) {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+section.video-content div.video-1 div.logo-svg svg {
+    width: 8rem;
+}
+
+section.video-content > a.extra {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    color: #C4170C;
+    font-weight: bold;
+    margin: 2.2rem 2.7rem;
+    display: block;
+    letter-spacing: -1px;
+}
+
+
+section div.bar {
+    width: 83vw;
+    background-color: #6161612c;
+    height: 1px;
+    margin: auto;
+    
+}
+
+section.normal-content a.extra-normal {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    color: #C4170C;
+    font-weight: bold;
+    margin: 2.2rem 2.7rem;
+    display: block;
+    letter-spacing: -1px;
+    line-height: 2rem;
+}
+
+/* section.normal-content div.bar-normal {
+    background-color: #2c2c2c1c;
+    height: 1px;
+    width: 83vw;
+    margin: auto;
+} */
+
+section > div.resumo {
+    font-family: 'Open Sans', sans-serif;
+    width: 98vw;
+    padding: 1.2rem 2.5rem .5rem;
+    font-size: 1.5rem;
+}
+
+section picture span {
+    /* Teste de sobreposição */
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+    color: white;
+    font-size: clamp(1rem, 1rem + 2vw, 4rem);
+    background: rgba(255, 0, 0, 0.452);
+    border-radius: .5rem;
+    width: clamp(20rem, 10rem + 40vw, 70rem);
+    padding: 0 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+}
+
+section p {
+    font-family: 'Open Sans', sans-serif;
+    padding: .3rem 2.5rem 1.6rem;
+    font-size: 1.2rem;
+    color: #4e4e4e;
+}
+
+div.viu-isso, div.deu-falar {
+    background-color: white;
+    margin: 1.6rem 0;
+    width: 100%;
+    border-radius: 12px;
+}
+
+div.viu-isso h1, div.mais-lidas h1, div.deu-falar h1 {
+    color: #181818;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin: 1.7rem 2.3rem;
+}
+
+div.viu-isso div.row-news {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 2.5rem;
+    overflow: auto;
+}
+
+div.viu-isso div.row-news div.row-news-wrapper, div.deu-falar div.deu-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 2.5rem 0;
+}
+
+div.viu-isso div.row-news div.row-news-wrapper a {
+    text-decoration: none;
+    color: #C4170C;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+div div.full-bar {
+    background-color: #2c2c2c1c;
+    height: 1px;
+    width: 100%;
+    margin: auto;
+}
+
+div div.semi-bar {
+    background-color: #2c2c2c1c;
+    height: 1px;
+    width: 85%;
+    margin: auto;
+}
+
+div.mais-lidas, div.deu-falar, div.favoritos, div.ouca-g1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+}
+
+div.mais-lidas div.list-wrapper {
+    margin: 2.1rem 0;
+    padding: 0 2rem 0 .5rem;
+}
+
+div.mais-lidas div.list-wrapper a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.mais-lidas a {
+    text-decoration: none;
+    color: #C4170C;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+div.mais-lidas span {
+    font-size: 2.1rem;
+    font-family: 'Open Sans';
+    color: #00000067;
+    font-weight: 500;
+    padding: 0 1.6rem;
+}
+
+div.deu-falar div.deu-wrapper {
+    margin: 2.2rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.deu-falar div.deu-wrapper a {
+    text-decoration: none;
+    color: #C4170C;
+    font-size: 1.6rem;
+    letter-spacing: -1px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    display: inline-flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+div.deu-falar div.deu-wrapper img {
+    border-radius: 12px;
+}
+
+
+div.deu-falar div.deu-link {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 2rem;
+}
+
+div.deu-falar div.deu-link a {
+    text-decoration: none;
+    color: #C4170C;
+    font-size: 1.4rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    letter-spacing: -1px;
+    display: inline-flex;
+    text-align: center;
+    gap: .7rem;
+}
+
+div.deu-falar div.deu-link a span {
+    color: #C4170C;
+    font-size: 2rem;
+}
+
+div.favoritos {
+    margin-bottom: 1.6rem;
+}
+
+div.favoritos div.favoritos-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 2.3rem;
+}
+
+div.favoritos div.favoritos-head h1 {
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-size: 1.6rem;
+}
+
+div.favoritos div.favoritos-head a {
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #C4170C;
+    font-weight: 600;
+}
+
+div.favoritos h2 {
+    padding: 1.6rem 2.3rem 1.4rem;
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-weight: normal;
+}
+
+div.favoritos div.favoritos-opt {
+    padding: 1.6rem 2.3rem;
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+}
+
+div.favoritos div.favoritos-opt a {
+    display: inline-block;
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #C4170C;
+    padding: .8rem 1.7rem;
+    margin: .5rem .3rem;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 2rem;
+    width: fit-content;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+/* div:has(> a.opt-fav:empty) {  USANDO HAS E EMPTY
+    background-color: rgb(34, 96, 178);
+}
+
+has com media na criação de flexbox
+
+.exemplo:has(.media) {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+*/
+
+/* .favoritos:hover :is(.favoritos-opt a, .exemplo-x, .exemplo-y) {
+    color: blue;
+    background-color: yellow;
+} 
+
+É uma solução bem melhor do que 
+
+.favoritos:hover .favoritos-opt a, .favoritos:hover .exemplo-x, .exemplo-y {
+    color: blue;
+    background-color: yellow; 
+}
+
+e soluciona o problema de colocar itens dentro de divs ou links para ter a mesma mudançda de atributo
+
+.favoritos .favoritos-opt a:first-child:hover ~ a {
+    background-color: yellow;
+}
+
+
+*/
+
+
+
+div.favoritos div#favoritos-seguir {
+    padding: 1.6rem 2.3rem;
+    text-align: center;
+    width: 100%;
+    margin: auto auto 2.3rem auto;
+    background-color: #f1f0ec;
+}
+
+div.favoritos div#favoritos-seguir a {
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    color: #ada5a5;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+div.ouca-g1 h1 {
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-size: 1.6rem;
+    padding: 1.6rem 2.3rem 1.4rem;
+}
+
+div.ouca-g1 div.ouca-wrapper {
+    padding: 2.3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper h2 {
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+div.ouca-g1 div.ouca-wrapper div.ouca-head-wrapper a {
+    font-family: 'Open Sans';
+    letter-spacing: -.5px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #C4170C;
+    font-weight: 700;
+}
+
+div.ouca-g1 div.ouca-wrapper img {
+    border-radius: 12px;
+}
+
+/* div.ouca-g1 div.ouca-mais {
+    
+} */
+
+div.ouca-g1 div.ouca-mais a {
+    text-decoration: none;
+    color: #C4170C;
+    font-size: 1.4rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 1.5rem 2.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+div.ouca-g1 div.ouca-mais a span {
+    font-size: 2rem;
+    font-weight: 900;
+}
