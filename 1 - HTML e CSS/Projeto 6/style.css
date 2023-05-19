@@ -378,6 +378,11 @@ section picture img {
     /* height: 100%; */
 }
 
+section#sec2 > a, section#sec3 > a {
+    pointer-events: none;
+    text-decoration: none;
+}
+
 section.video-content {
     /* background-color: #C4170C; */
     margin: 1.6rem 0 0;

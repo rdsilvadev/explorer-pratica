@@ -96,7 +96,7 @@
         transition: .7s;
     }
 
-    section picture img:hover {
+    section:hover picture img {
         transform: scale(1.3);
         
     }
