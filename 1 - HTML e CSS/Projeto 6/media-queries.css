@@ -1,4 +1,4 @@
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 890px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -47,7 +47,7 @@
     }
 }
 
-@media screen and (min-width: 820px) /* and (max-width: 1420px) */ {
+@media screen and (min-width: 890px) /* and (max-width: 1420px) */ {
 
     body, html {
         overflow: visible;
@@ -56,7 +56,8 @@
 
     div.container {
         padding: 4rem 6rem;
-        box-sizing: border-box;
+        max-width: 1300px;
+        margin: auto;
     }
     
     div.sec-test {
@@ -67,15 +68,14 @@
         grid-template-rows: auto auto;
 
         /* grid-auto-flow: column; */
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     section {
         border-radius: 1.5rem;
         margin: 0;
         padding: 0;
-        height: auto;
-        width: auto;
+        width: fit-content;
     }
 
     section h1 {
@@ -83,11 +83,22 @@
 
     section picture {
         padding: 0;
+        overflow: hidden;
+        border-radius: 1.5rem;
     }
+
+    /* overflow:hidden no pai para não vazar o filho e transition sem pseudoclasse pra ter efeito na volta da animação também.
+    Border-radius no pai picture e no filho img pra não vazar a diferença das bordas */
 
     section picture img {
         display: block; 
         border-radius: 1.5rem;
+        transition: .7s;
+    }
+
+    section picture img:hover {
+        transform: scale(1.3);
+        
     }
 
     section h1, section h2, section p {
@@ -130,19 +141,42 @@
         grid-row: 2 / 3;
     }
 
-    :is(section) :is(h1, h2) {
-        display: none;
+    :is(section#sec2, section#sec3) {
+        position: relative;
+    }
+
+    :is(section#sec2, section#sec3) :is(h1, h2) {
+        position: absolute;
+        
+    }
+
+    :is(section#sec2, section#sec3) :is(h1, h2, h2 a) {
+        color: white;
+        z-index: 1;
+        text-shadow: 1px 1px 2px black;
+        
+    }
+
+    :is(section#sec2, section#sec3) :is(h1) {
+        font-size: 1.7rem;
+    }
+
+    :is(section#sec2, section#sec3) :is(h2) {
+        font-size: 3rem;
+        bottom: 20px;
+        line-height: 3.5rem;
     }
 
     div.mais-lidas {
     }
+
 
     section.video-content {
         display: none;
     }
 
     :is(section#sec2, section#sec3) :is(img) {
-        filter: opacity(.8/);
+        filter: opacity(.8) brightness(.5);
     }
 
 } 
