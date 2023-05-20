@@ -578,6 +578,7 @@ div.viu-isso div.row-news div.row-news-wrapper a {
     letter-spacing: -1px;
     font-family: 'Open Sans';
     font-weight: 700;
+    width: 18.5rem;
 }
 
 div div.full-bar {
@@ -609,7 +610,7 @@ div.mais-lidas div.list-wrapper {
 div.mais-lidas div.list-wrapper a {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 }
 
