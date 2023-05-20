@@ -49,6 +49,8 @@
     div.area2 div.bloco-busca>input {
         display: none;
     }
+
+    
 }
 
 @media screen and (min-width: 890px) /* and (max-width: 1420px) */ {
@@ -58,7 +60,7 @@
         
     }
 
-    div.container {
+    .container {
         padding: 4rem 6rem;
         max-width: 1350px;
         margin: auto;
@@ -192,6 +194,10 @@
 
     div.viu-isso div.row-news div.row-news-wrapper picture img {
         display: block;
+    }
+
+    div.viu-isso, div.deu-falar {
+        
     }
 
 } 

@@ -578,7 +578,7 @@ div.viu-isso div.row-news div.row-news-wrapper a {
     letter-spacing: -1px;
     font-family: 'Open Sans';
     font-weight: 700;
-    width: 18.5rem;
+    width: 18.5rem; /* att */
 }
 
 div div.full-bar {
