@@ -189,10 +189,15 @@ div.area1 div.user div img {
     margin-right: .9rem;
 }
 
-div.area1 div.user span#setinha {
-    font-size: 1.7rem;
+div.area1 div.user img#setinha {
+    font-size: 3.7rem;
     font-weight: 600;
     padding-left: .5rem;
+    filter: opacity(.7);
+}
+
+div.area1 div.user div:hover img#setinha {
+    filter: invert(28%) sepia(75%) saturate(7500%) hue-rotate(211deg) brightness(96%) contrast(98%);
 }
 
 /* div.area2:hover:has(span) { Bom exemplo de como o has funciona
@@ -241,9 +246,8 @@ div.area2 div.bloco-menu > .wrapper span#label-menu {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.area2 div.bloco-menu > .wrapper span#menu {
-    font-size: 3rem;
-    font-weight: 300;
+div.area2 div.bloco-menu > .wrapper img#menu-icon {
+    filter: invert(100%) sepia(1%) saturate(167%) hue-rotate(304deg) brightness(118%) contrast(100%);
 }
 
 /* A solução não seria grid de jeito nenhum por já ter outro grid */
@@ -517,21 +521,6 @@ section > div.resumo {
     width: 98vw;
     padding: 1.2rem 2.5rem .5rem;
     font-size: 1.5rem;
-}
-
-section picture span {
-    /* Teste de sobreposição */
-    position: absolute;
-    left: 2rem;
-    bottom: 3rem;
-    color: white;
-    font-size: clamp(1rem, 1rem + 2vw, 4rem);
-    background: rgba(255, 0, 0, 0.452);
-    border-radius: .5rem;
-    width: clamp(20rem, 10rem + 40vw, 70rem);
-    padding: 0 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: none;
 }
 
 section p, main div.fieldset-main-wrapper > p {
