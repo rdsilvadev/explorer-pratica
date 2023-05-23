@@ -57,7 +57,7 @@
             </div>
             <div id="logo"><img src="logo.png"></div>
             <div class="bloco-busca">
-                <label for="buscar" id="lupa"><img src="icon-search.svg"></label>
+                <label for="buscar" id="caixa-lupa"><img src="icon-search.svg" id="lupa"></label>
                 <input type="text" name="buscar" id="buscar" placeholder="Buscar">
                 </input>
             </div>
@@ -71,7 +71,7 @@
                         de Galípolo mira presidência do BC antes de 2024</a></h2>
                 <picture><a
                         href="https://g1.globo.com/politica/blog/julia-duailibi/post/2023/05/08/indicacao-de-galipolo-mira-presidencia-antes-de-2024.ghtml"><img
-                            src="https://s2.glbimg.com/ypTmZ4_mcgBpPhyqTbzt4jAc7Bw=/58x61:926x549/540x304/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/r/z/mplAqtTBSBWVa9qBTAnw/gabriel-gaipolo-em-entrevista-ao-jornal-nacional.jpg"
+                            src="galipolo.png"
                             title="Foto: (Reprodução Jornal Nacional)"></a>
                 </picture>
                 <p>Há 22 minutos — Em Blog da Julia Duailibi</p>
@@ -547,14 +547,18 @@
         function clickSearch() {
             Object.assign(document.getElementById('buscar').style, { width: '22.5rem', color: 'black', background: 'white', transition: 'width .5s' });
 
-            Object.assign(document.getElementById('lupa').style, { color: '#99a1a9', background: 'white' });
+            Object.assign(document.getElementById('lupa').style, { filter: 'invert(75%) sepia(4%) saturate(667%) hue-rotate(169deg) brightness(85%) contrast(88%)' });
+
+            Object.assign(document.getElementById('caixa-lupa').style, { color: '#99a1a9', background: 'white' });
         }
 
         function clickSearchOut() {
             // document.getElementById('buscar').style.width = '13.5rem';
             Object.assign(document.getElementById('buscar').style, { width: '13.5rem', color: 'white', background: '#a70e03' });
 
-            Object.assign(document.getElementById('lupa').style, { color: 'white', background: '#a70e03' });
+            Object.assign(document.getElementById('lupa').style, { filter: 'invert(100%) sepia(0%) saturate(28%) hue-rotate(81deg) brightness(107%) contrast(107%)' });
+
+            Object.assign(document.getElementById('caixa-lupa').style, { background: '#a70e03' });
         }
 
         clip.addEventListener('mouseover', function (e) {

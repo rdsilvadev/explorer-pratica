@@ -283,10 +283,11 @@ div.area2 div.bloco-busca > label {
     padding: .5rem .3rem 0 .5rem;
 }
 
-div.area2 div.bloco-busca > label span {
+div.area2 div.bloco-busca > label img {
     font-size: 2.4rem;
     font-weight: 300;
     padding-top: 2px;
+    filter: invert(100%) sepia(1%) saturate(167%) hue-rotate(304deg) brightness(118%) contrast(100%);
 }
 
 div.area2 div.bloco-busca > input {
