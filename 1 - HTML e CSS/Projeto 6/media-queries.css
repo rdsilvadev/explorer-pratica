@@ -103,6 +103,7 @@
     main {
         display: flex;
         flex-direction: column;
+        grid-row: 2 / 3;
     }
 
     main, div.favoritos, div.ouca-g1, div.mais-lidas, div.deu-falar, div.viu-isso {
@@ -359,6 +360,46 @@
 }
 
 @media screen and (min-width: 960px) and (max-width: 999px) {
+    div.container {
+        display: grid;
+        margin: auto;
+        max-width: 132rem;
+        padding: 4rem 5rem;
+        width: 100%;
+        gap: 1.3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    div.viu-isso {
+        margin-top: 7rem;
+        grid-column: 8 / 11;
+        /* grid-row: 3 / 4; */
+    }
+
+    div.mais-lidas {
+        grid-column: 8 / 11;
+        /* grid-row: 4 / 5; */
+    }
+
+    div.deu-falar {
+        grid-column: 8 / 11;
+        /* grid-row: 5 / 6; */
+    }
+
+    div.favoritos {
+        grid-column: 8 / 11;
+        /* grid-row: 6 / 7; */
+    }
+
+    div.ouca-g1 {
+        grid-column: 8 / 11;
+        /* grid-row: 7 / 8; */
+    }
+
+    div.blogs-colunas, div.tambem, aside, footer {
+        display: none;
+    }
+    
     section#sec1 {
         display: flex;
         flex-direction: column;
@@ -368,6 +409,7 @@
         width: 85rem;
         margin: 4.1rem auto auto auto;
         border-radius: 1rem;
+        grid-column: 1 / 11;
     }
 
     section#sec1 img {
@@ -391,6 +433,11 @@
 
     div.viu-isso h1 {
         padding-top: 1.5rem;
+    }
+
+    main {
+        grid-column: 1 / 8;
+        grid-row: 2 / span 20;
     }
 }
 
