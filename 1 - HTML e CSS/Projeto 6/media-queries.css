@@ -1,41 +1,5 @@
-@media screen and (min-width: 540px) and (max-width: 960px) {
-    section#sec1 {
-        display: flex;
-        flex-direction: column;
-        margin-top: 4.1rem;
-        outline: 1px solid rgb(221, 221, 221);
-        height: 45.8rem;
-        width: 95rem;
-        margin: 4.1rem auto auto auto;
-    }
-
-    section#sec1 img {
-        display: none;
-    }
-
-    section#sec1 p {
-        display: none;
-    }
-
-    section#sec2, section#sec3, section.video-content {
-        display: none;
-    }
-
-    section#sec1 h2 {
-        margin-top: 13rem;
-        font-size: 4rem;
-        line-height: 3.5rem;
-        max-width: 85rem;
-    }
-
-    
-    main div.fieldset-main-wrapper {
-        display: flex;
-    }
-}
-
 @media screen and (max-width: 767px) {
-    .container {
+    div.container {
         display: flex;
         flex-direction: column;
     }
@@ -85,6 +49,131 @@
         color: white;
         font-weight: bold;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 960px) {
+    
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#sec1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.1rem;
+        outline: 1px solid rgb(221, 221, 221);
+        height: 45.8rem;
+        width: 100%;
+        margin: 4.1rem auto auto auto;
+    }
+
+    section#sec1 img {
+        display: none;
+    }
+
+    section#sec1 p {
+        display: none;
+    }
+
+    section#sec2, section#sec3, section.video-content {
+        display: none;
+    }
+
+    section#sec1 h2 {
+        margin-top: 13rem;
+        font-size: 4rem;
+        line-height: 3.5rem;
+        max-width: 85rem;
+    }
+
+    div.viu-isso {
+        margin-top: 1.7rem;
+    }
+
+    div.viu-isso h1 {
+        padding-top: 1.5rem;
+    }
+
+    div.favoritos, div.mais-lidas, div.deu-falar {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.103);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main, div.favoritos, div.ouca-g1, div.mais-lidas, div.deu-falar, div.viu-isso {
+        grid-column: 1 / 3;
+    }
+
+    main div.main-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    main img {
+        aspect-ratio: 1.8;
+    }
+
+    main div.main-wrapper picture {
+        grid-column: 1 / 10;
+    }
+
+    main div.main-wrapper div.main-info-wrapper {
+        grid-column: 10 / 22;
+    }
+
+    /* main div.fieldset-main-wrapper {
+        display: flex;
+        flex-direction: row;
+    } */
+
+    main div.fieldset-main-wrapper {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    main div.fieldset-main-wrapper div.main-bar {
+        display: block;
+        height: 1px;
+        margin: 1rem 0;
+        background-color: #0000003d;
+    }
+
+    main div.main-wrapper {
+        flex-direction: row;
+    }
+
+    main div.fieldset-main-wrapper > p {
+        display: none;
+    }
+
+    main div.main-info-wrapper {
+        margin-left: -.7rem;
+    }
+
+    main div.main-info-wrapper > p {
+        display: block;
+        margin: 1rem 0 1rem 2.5rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.2rem;
+        color: rgb(78, 78, 78);
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+    main img {
+        aspect-ratio: 1.8;
+        margin-left: 1.2rem;
+        border-radius: 1rem;
+    }
+
+    main div.main-info-wrapper {
+        margin-left: .5rem;
     }
 }
 
@@ -299,6 +388,10 @@
         line-height: 3.5rem;
         max-width: 85rem;
     }
+
+    div.viu-isso h1 {
+        padding-top: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1000px) /* and (max-width: 1420px) */ {
@@ -421,7 +514,7 @@
         display: none;
         object-fit: fill;
     }
-
+    
     section#sec2 {
         grid-column: 6 / 11;
         grid-row: 1 / 2;
@@ -616,12 +709,12 @@
         
     }
 
-    div.main-bar {
+    /* div.main-bar {
         background-color: rgba(0, 0, 0, 0.192);
         height: 1px;
         width: 100%;
         margin: 3rem 0;
-    }
+    } */
 
     @media screen and (min-width: 1065px) {
         div.area2 div.bloco-busca > label {
