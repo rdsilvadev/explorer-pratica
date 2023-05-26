@@ -458,27 +458,43 @@
     }
 
     main {
-        grid-column: 1 / 8;
-        grid-row: 2 / span 20;
-    }
-
-    main {
         /* background-color: white; */
         font-family: 'Open Sans';
         margin-top: 7rem;
         padding-right: 1rem;
+        grid-column: 1 / 8;
+        grid-row: 2 / span 20;
     }
 
-    main div.main-wrapper {
+    /* main div.main-wrapper {
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
+    } */
+
+    /* main div.main-wrapper {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    main div.main-wrapper picture {
+        grid-column: 1 / 10;
+    }
+
+    main div.main-wrapper div.main-info-wrapper {
+        grid-column: 10 / 22;
+    }
+
+    main picture {
+        padding: 0;
     }
 
     main div.main-wrapper picture img {
         width: 100%;
         border-radius: .8rem;
-    }
+        aspect-ratio: 1.8;
+    } */
 
     main div.main-wrapper h1 {
         color: #181818;
@@ -542,16 +558,6 @@
         display: none;
     }
 
-    main picture {
-        padding: 0;
-        width: 45rem;
-    }
-
-    main img {
-        width: 100%;
-        
-    }
-
     div.deu-falar, div.ouca-g1, div.favoritos {
         margin: 0;
         height: fit-content;
@@ -567,6 +573,32 @@
         height: 1px;
         margin: 3.5rem 0;
         background-color: #0000003d;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    main div.main-wrapper {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    main div.main-wrapper picture {
+        grid-column: 1 / 10;
+    }
+
+    main div.main-wrapper div.main-info-wrapper {
+        grid-column: 10 / 22;
+    }
+
+    main picture {
+        padding: 0;
+    }
+
+    main div.main-wrapper picture img {
+        width: 100%;
+        border-radius: .8rem;
+        aspect-ratio: 1.8;
     }
 }
 
@@ -802,17 +834,6 @@
         padding-right: 1rem;
     }
 
-    main div.main-wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    main div.main-wrapper picture img {
-        width: 100%;
-        border-radius: .8rem;
-    }
-
     main div.main-wrapper h1 {
         color: #181818;
         font-size: 1.8rem;
@@ -873,16 +894,6 @@
 
     main div.fieldset-main-wrapper > p {
         display: none;
-    }
-
-    main picture {
-        padding: 0;
-        width: 45rem;
-    }
-
-    main img {
-        width: 100%;
-        
     }
 
     main div.fieldset-main-wrapper div.main-bar {
